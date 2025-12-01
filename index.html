@@ -1,0 +1,232 @@
+<html lang="en">
+ <head>
+  <script>
+   <!-- code by https://www.html-code-generator.com -->
+document.write(unescape('%3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%3Cmeta%20charset%3D%22UTF-8%22%3E%0A%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%3E%0A%3Ctitle%3EWinGo%20Prediction%20Panel%3C/title%3E%0A%3Cstyle%3E%0A%20%20body%20%7B%0A%20%20%20%20margin%3A%200%3B%0A%20%20%20%20background%3A%20radial-gradient%28circle%20at%20center%2C%20%23080808%200%25%2C%20%23000%20100%25%29%3B%0A%20%20%20%20color%3A%20%23fff%3B%0A%20%20%20%20font-family%3A%20%27Poppins%27%2C%20sans-serif%3B%0A%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20flex-direction%3A%20column%3B%0A%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20justify-content%3A%20flex-start%3B%0A%20%20%20%20min-height%3A%20100vh%3B%0A%20%20%20%20padding%3A%2020px%2010px%3B%0A%20%20%7D%0A%0A%20%20.card%20%7B%0A%20%20%20%20width%3A%2095%25%3B%0A%20%20%20%20max-width%3A%20400px%3B%0A%20%20%20%20background%3A%20rgba%2820%2C%200%2C%200%2C%200.85%29%3B%0A%20%20%20%20border%3A%201.5px%20solid%20%23ff0000%3B%0A%20%20%20%20border-radius%3A%2016px%3B%0A%20%20%20%20box-shadow%3A%200%200%2015px%20%23ff0000a0%3B%0A%20%20%20%20text-align%3A%20center%3B%0A%20%20%20%20padding%3A%2015px%3B%0A%20%20%7D%0A%0A%20%20.period%20%7B%0A%20%20%20%20font-size%3A%2015px%3B%0A%20%20%20%20color%3A%20%23ff6666%3B%0A%20%20%20%20margin-top%3A%205px%3B%0A%20%20%7D%0A%0A%20%20.period-number%20%7B%0A%20%20%20%20font-size%3A%2022px%3B%0A%20%20%20%20font-weight%3A%20bold%3B%0A%20%20%20%20color%3A%20%23fff%3B%0A%20%20%20%20letter-spacing%3A%201px%3B%0A%20%20%20%20margin-bottom%3A%2010px%3B%0A%20%20%7D%0A%0A%20%20.title%20%7B%0A%20%20%20%20font-size%3A%2018px%3B%0A%20%20%20%20color%3A%20%23ff3b3b%3B%0A%20%20%20%20margin-top%3A%2010px%3B%0A%20%20%20%20text-shadow%3A%200%200%2010px%20%23ff0000%3B%0A%20%20%7D%0A%0A%20%20.result%20%7B%0A%20%20%20%20font-size%3A%2028px%3B%0A%20%20%20%20margin-top%3A%205px%3B%0A%20%20%20%20font-weight%3A%20600%3B%0A%20%20%20%20color%3A%20%2300ff8c%3B%0A%20%20%20%20text-shadow%3A%200%200%2015px%20%2300ff8c%3B%0A%20%20%7D%0A%0A%20%20.balls%20%7B%0A%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20gap%3A%2020px%3B%0A%20%20%20%20margin-top%3A%2015px%3B%0A%20%20%7D%0A%0A%20%20.balls%20img%20%7B%0A%20%20%20%20width%3A%2075px%3B%0A%20%20%20%20height%3A%2075px%3B%0A%20%20%20%20border-radius%3A%2050%25%3B%0A%20%20%20%20box-shadow%3A%200%200%2025px%20%23ff0000%3B%0A%20%20%20%20border%3A%202px%20solid%20%23ff0000%3B%0A%20%20%7D%0A%0A%20%20.status%20%7B%0A%20%20%20%20font-size%3A%2013px%3B%0A%20%20%20%20color%3A%20%23999%3B%0A%20%20%20%20margin-top%3A%2010px%3B%0A%20%20%7D%0A%0A%20%20@media%20%28max-width%3A%20500px%29%20%7B%0A%20%20%20%20.balls%20img%20%7B%0A%20%20%20%20%20%20width%3A%2060px%3B%0A%20%20%20%20%20%20height%3A%2060px%3B%0A%20%20%20%20%7D%0A%20%20%20%20.result%20%7B%0A%20%20%20%20%20%20font-size%3A%2022px%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%3C/style%3E%0A%3C/head%3E%0A%3Cbody%3E%0A%20%20%3Cdiv%20class%3D%22card%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22period%22%3ECURRENT%20PERIOD%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22period-number%22%20id%3D%22period%22%3ELoading...%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22title%22%3E%uD83D%uDC51%20PREMIUM%20PREDICTION%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22result%22%20id%3D%22result%22%3EWAITING...%3C/div%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22balls%22%3E%0A%20%20%20%20%20%20%3Cimg%20id%3D%22img1%22%20src%3D%22%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%3Cimg%20id%3D%22img2%22%20src%3D%22%22%20alt%3D%22%22%3E%0A%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22status%22%20id%3D%22status%22%3EInitializing...%3C/div%3E%0A%20%20%3C/div%3E%0A%0A%3Cscript%3E%0Aconst%20CURRENT_API%20%3D%20%22https%3A//api.bdg88zf.com/api/webapi/GetGameIssue%22%3B%0Aconst%20REQUEST_DATA%20%3D%20%7B%0A%20%20typeId%3A%201%2C%0A%20%20language%3A%200%2C%0A%20%20random%3A%20%22e7fe6c090da2495ab8290dac551ef1ed%22%2C%0A%20%20signature%3A%20%221F390E2B2D8A55D693E57FD905AE73A7%22%2C%0A%20%20timestamp%3A%201723726679%0A%7D%3B%0A%0Aconst%20images%20%3D%20%5B%0A%20%20%22https%3A//i.ibb.co/spSZ1m8f/0.png%22%2C%0A%20%20%22https%3A//i.ibb.co/bgwPJd83/1.png%22%2C%0A%20%20%22https%3A//i.ibb.co/HfJYQ3Sg/2.png%22%2C%0A%20%20%22https%3A//i.ibb.co/pDCVyRS/3.png%22%2C%0A%20%20%22https%3A//i.ibb.co/zhws3jTt/4.png%22%2C%0A%20%20%22https%3A//i.ibb.co/rR4Y3Pt8/5.png%22%2C%0A%20%20%22https%3A//i.ibb.co/jmq2Sb7/6.png%22%2C%0A%20%20%22https%3A//i.ibb.co/HT1mWgqb/7.png%22%2C%0A%20%20%22https%3A//i.ibb.co/8D6VF902/8.png%22%2C%0A%20%20%22https%3A//i.ibb.co/4nxj5Fvf/9.png%22%0A%5D%3B%0A%0Afunction%20randomBetween%28min%2C%20max%29%20%7B%0A%20%20return%20Math.floor%28Math.random%28%29%20*%20%28max%20-%20min%20+%201%29%29%20+%20min%3B%0A%7D%0A%0Afunction%20getIndianTime%28%29%20%7B%0A%20%20return%20new%20Date%28new%20Date%28%29.toLocaleString%28%22en-US%22%2C%20%7B%20timeZone%3A%20%22Asia/Kolkata%22%20%7D%29%29%3B%0A%7D%0A%0A//%20Backup%20local%20period%0Afunction%20getFallbackPeriod%28%29%20%7B%0A%20%20const%20t%20%3D%20getIndianTime%28%29%3B%0A%20%20const%20y%20%3D%20t.getFullYear%28%29%3B%0A%20%20const%20m%20%3D%20String%28t.getMonth%28%29%20+%201%29.padStart%282%2C%20%270%27%29%3B%0A%20%20const%20d%20%3D%20String%28t.getDate%28%29%29.padStart%282%2C%20%270%27%29%3B%0A%20%20const%20h%20%3D%20String%28t.getHours%28%29%29.padStart%282%2C%20%270%27%29%3B%0A%20%20const%20min%20%3D%20String%28t.getMinutes%28%29%29.padStart%282%2C%20%270%27%29%3B%0A%20%20return%20%60%24%7By%7D%24%7Bm%7D%24%7Bd%7D%24%7Bh%7D%24%7Bmin%7D%60%3B%0A%7D%0A%0A//%20Prediction%20logic%20%28SMALL%20%3D%200-4%2C%20BIG%20%3D%205-9%29%0Afunction%20getPrediction%28%29%20%7B%0A%20%20const%20isSmall%20%3D%20Math.random%28%29%20%3C%200.5%3B%0A%20%20const%20label%20%3D%20isSmall%20%3F%20%22SMALL%22%20%3A%20%22BIG%22%3B%0A%20%20let%20n1%2C%20n2%3B%0A%20%20if%20%28isSmall%29%20%7B%0A%20%20%20%20n1%20%3D%20randomBetween%280%2C%204%29%3B%0A%20%20%20%20do%20%7B%20n2%20%3D%20randomBetween%280%2C%204%29%3B%20%7D%20while%20%28n2%20%3D%3D%3D%20n1%29%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20n1%20%3D%20randomBetween%285%2C%209%29%3B%0A%20%20%20%20do%20%7B%20n2%20%3D%20randomBetween%285%2C%209%29%3B%20%7D%20while%20%28n2%20%3D%3D%3D%20n1%29%3B%0A%20%20%7D%0A%20%20return%20%7B%20label%2C%20n1%2C%20n2%20%7D%3B%0A%7D%0A%0A//%20Get%20current%20period%20from%20API%0Aasync%20function%20fetchPeriod%28%29%20%7B%0A%20%20try%20%7B%0A%20%20%20%20const%20response%20%3D%20await%20fetch%28CURRENT_API%2C%20%7B%0A%20%20%20%20%20%20method%3A%20%22POST%22%2C%0A%20%20%20%20%20%20headers%3A%20%7B%20%22Content-Type%22%3A%20%22application/json%22%20%7D%2C%0A%20%20%20%20%20%20body%3A%20JSON.stringify%28REQUEST_DATA%29%0A%20%20%20%20%7D%29%3B%0A%20%20%20%20const%20data%20%3D%20await%20response.json%28%29%3B%0A%20%20%20%20if%20%28data%20%26%26%20data.Data%20%26%26%20data.Data%5B0%5D%20%26%26%20data.Data%5B0%5D.issueNumber%29%20%7B%0A%20%20%20%20%20%20return%20data.Data%5B0%5D.issueNumber%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20throw%20new%20Error%28%22Invalid%20response%22%29%3B%0A%20%20%20%20%7D%0A%20%20%7D%20catch%20%28e%29%20%7B%0A%20%20%20%20console.warn%28%22API%20error%2C%20fallback%20period%20used.%22%29%3B%0A%20%20%20%20return%20getFallbackPeriod%28%29%3B%0A%20%20%7D%0A%7D%0A%0A//%20Update%20UI%0Aasync%20function%20updateUI%28%29%20%7B%0A%20%20const%20period%20%3D%20await%20fetchPeriod%28%29%3B%0A%20%20const%20key%20%3D%20%22pred_%22%20+%20period%3B%0A%20%20let%20data%20%3D%20localStorage.getItem%28key%29%3B%0A%0A%20%20if%20%28data%29%20data%20%3D%20JSON.parse%28data%29%3B%0A%20%20else%20%7B%0A%20%20%20%20data%20%3D%20getPrediction%28%29%3B%0A%20%20%20%20localStorage.setItem%28key%2C%20JSON.stringify%28data%29%29%3B%0A%20%20%7D%0A%0A%20%20document.getElementById%28%22period%22%29.textContent%20%3D%20period%3B%0A%20%20document.getElementById%28%22result%22%29.textContent%20%3D%20data.label%3B%0A%20%20document.getElementById%28%22img1%22%29.src%20%3D%20images%5Bdata.n1%5D%3B%0A%20%20document.getElementById%28%22img2%22%29.src%20%3D%20images%5Bdata.n2%5D%3B%0A%0A%20%20const%20now%20%3D%20getIndianTime%28%29%3B%0A%20%20document.getElementById%28%22status%22%29.textContent%20%3D%20%0A%20%20%20%20%22Last%20updated%20at%20%22%20+%20now.toLocaleTimeString%28%22en-IN%22%2C%20%7B%20timeZone%3A%20%22Asia/Kolkata%22%20%7D%29%3B%0A%7D%0A%0A//%20Update%20at%20every%20new%20minute%20%28India%20time%29%0Alet%20lastMinute%20%3D%20-1%3B%0AsetInterval%28%28%29%20%3D%3E%20%7B%0A%20%20const%20t%20%3D%20getIndianTime%28%29%3B%0A%20%20if%20%28t.getMinutes%28%29%20%21%3D%3D%20lastMinute%29%20%7B%0A%20%20%20%20lastMinute%20%3D%20t.getMinutes%28%29%3B%0A%20%20%20%20updateUI%28%29%3B%0A%20%20%7D%0A%7D%2C%202000%29%3B%0A%0AupdateUI%28%29%3B%0A%3C/script%3E%0A%3C/body%3E%0A%3C/html%3E'));
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   WinGo Prediction Panel
+  </title>
+  <style>
+   body {
+    margin: 0;
+    background: radial-gradient(circle at center, #080808 0%, #000 100%);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px 10px;
+  }
+
+  .card {
+    width: 95%;
+    max-width: 400px;
+    background: rgba(20, 0, 0, 0.85);
+    border: 1.5px solid #ff0000;
+    border-radius: 16px;
+    box-shadow: 0 0 15px #ff0000a0;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .period {
+    font-size: 15px;
+    color: #ff6666;
+    margin-top: 5px;
+  }
+
+  .period-number {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+    color: #ff3b3b;
+    margin-top: 10px;
+    text-shadow: 0 0 10px #ff0000;
+  }
+
+  .result {
+    font-size: 28px;
+    margin-top: 5px;
+    font-weight: 600;
+    color: #00ff8c;
+    text-shadow: 0 0 15px #00ff8c;
+  }
+
+  .balls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+  }
+
+  .balls img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #ff0000;
+    border: 2px solid #ff0000;
+  }
+
+  .status {
+    font-size: 13px;
+    color: #999;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 500px) {
+    .balls img {
+      width: 60px;
+      height: 60px;
+    }
+    .result {
+      font-size: 22px;
+    }
+  }
+  </style>
+ </head>
+ <body>
+  <div class="card">
+   <div class="period">
+    CURRENT PERIOD
+   </div>
+   <div class="period-number" id="period">
+    202511101836
+   </div>
+   <div class="title">
+    👑 PREMIUM PREDICTION
+   </div>
+   <div class="result" id="result">
+    BIG
+   </div>
+   <div class="balls">
+    <img alt="" id="img1" src="https://i.ibb.co/4nxj5Fvf/9.png"/>
+    <img alt="" id="img2" src="https://i.ibb.co/8D6VF902/8.png"/>
+   </div>
+   <div class="status" id="status">
+    Last updated at 12:06:37 am
+   </div>
+  </div>
+  <script>
+   const CURRENT_API = "https://api.bdg88zf.com/api/webapi/GetGameIssue";
+const REQUEST_DATA = {
+  typeId: 1,
+  language: 0,
+  random: "e7fe6c090da2495ab8290dac551ef1ed",
+  signature: "1F390E2B2D8A55D693E57FD905AE73A7",
+  timestamp: 1723726679
+};
+
+const images = [
+  "https://i.ibb.co/spSZ1m8f/0.png",
+  "https://i.ibb.co/bgwPJd83/1.png",
+  "https://i.ibb.co/HfJYQ3Sg/2.png",
+  "https://i.ibb.co/pDCVyRS/3.png",
+  "https://i.ibb.co/zhws3jTt/4.png",
+  "https://i.ibb.co/rR4Y3Pt8/5.png",
+  "https://i.ibb.co/jmq2Sb7/6.png",
+  "https://i.ibb.co/HT1mWgqb/7.png",
+  "https://i.ibb.co/8D6VF902/8.png",
+  "https://i.ibb.co/4nxj5Fvf/9.png"
+];
+
+function randomBetween(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getIndianTime() {
+  return new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
+}
+
+// Backup local period
+function getFallbackPeriod() {
+  const t = getIndianTime();
+  const y = t.getFullYear();
+  const m = String(t.getMonth() + 1).padStart(2, '0');
+  const d = String(t.getDate()).padStart(2, '0');
+  const h = String(t.getHours()).padStart(2, '0');
+  const min = String(t.getMinutes()).padStart(2, '0');
+  return `${y}${m}${d}${h}${min}`;
+}
+
+// Prediction logic (SMALL = 0-4, BIG = 5-9)
+function getPrediction() {
+  const isSmall = Math.random() < 0.5;
+  const label = isSmall ? "SMALL" : "BIG";
+  let n1, n2;
+  if (isSmall) {
+    n1 = randomBetween(0, 4);
+    do { n2 = randomBetween(0, 4); } while (n2 === n1);
+  } else {
+    n1 = randomBetween(5, 9);
+    do { n2 = randomBetween(5, 9); } while (n2 === n1);
+  }
+  return { label, n1, n2 };
+}
+
+// Get current period from API
+async function fetchPeriod() {
+  try {
+    const response = await fetch(CURRENT_API, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(REQUEST_DATA)
+    });
+    const data = await response.json();
+    if (data && data.Data && data.Data[0] && data.Data[0].issueNumber) {
+      return data.Data[0].issueNumber;
+    } else {
+      throw new Error("Invalid response");
+    }
+  } catch (e) {
+    console.warn("API error, fallback period used.");
+    return getFallbackPeriod();
+  }
+}
+
+// Update UI
+async function updateUI() {
+  const period = await fetchPeriod();
+  const key = "pred_" + period;
+  let data = localStorage.getItem(key);
+
+  if (data) data = JSON.parse(data);
+  else {
+    data = getPrediction();
+    localStorage.setItem(key, JSON.stringify(data));
+  }
+
+  document.getElementById("period").textContent = period;
+  document.getElementById("result").textContent = data.label;
+  document.getElementById("img1").src = images[data.n1];
+  document.getElementById("img2").src = images[data.n2];
+
+  const now = getIndianTime();
+  document.getElementById("status").textContent = 
+    "Last updated at " + now.toLocaleTimeString("en-IN", { timeZone: "Asia/Kolkata" });
+}
+
+// Update at every new minute (India time)
+let lastMinute = -1;
+setInterval(() => {
+  const t = getIndianTime();
+  if (t.getMinutes() !== lastMinute) {
+    lastMinute = t.getMinutes();
+    updateUI();
+  }
+}, 2000);
+
+updateUI();
+  </script>
+ </body>
+</html>
